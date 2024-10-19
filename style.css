@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --theme-color: #1D70B7;
+  --primary-color: #EB1C22;
+  --text-color: #556987;
+  --secondery: #2A3342;
+  --black: #000000;
+  --white-color: #fff;
+}
+
+/*
+===============================
+Global CSS START
+===============================
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+img, svg {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+  transition: 0.3s all ease;
+}
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: var(--text-white);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+}
+h1,
+h2 {
+  font-weight: 700;
+}
+h4,
+h5 {
+  font-weight: 600;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  color: var(--text-color);
+}
+p:last-of-type {
+	margin: 0;
+}
+/*
+==========================
+Main Btn Css Start
+==========================
+*/
+.site-btn {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 28px;
+  display: inline-block;
+  transition: 0.3s all ease;
+  border-radius: 6px;
+  color: var(--white-color);
+  text-decoration: none;
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+}
+.site-btn:hover {
+  color: var(--white-color);
+  background-color: var(--black);
+}
+/*
+=========================
+Main Btn Css End 
+=========================
+*/
+#page {
+  overflow: hidden;
+}
+@media screen and (min-width: 1400px) {
+  .container{
+     max-width: 1260px;
+  }
+  .container-large {
+    max-width: 1340px;
+  }
+  }
+/* 
+============================
+Global CSS END
+============================
+*/
+
+/*
+============================
+Header Css Start
+============================
+*/
+
+.header-top{
+  background-color: var(--theme-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.top-content p{
+  color: var(--white-color);
+  text-align: center;
+  font-size: 14px;
+}
+@media only screen and (max-width:767px) {
+	.top-content p {
+    max-width: 345px;
+    text-align: left;
+  }
+}
+@media only screen and (max-width:400px) {
+	.top-content p {
+    max-width: 290px;
+  }
+}
+.top-content a {
+  color: var(--white-color);
+  padding-left: 10px;
+}
+.remove-btn {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.remove-btn a {
+  color: #fff;
+  font-size: 18px;
+  display: block;
+}
+.main-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.header-btn a {
+  font-size: 14px;
+  padding: 10px 28px;
+}
+/*
+============================
+Header Css End
+============================
+*/
+
+/*
+============================
+Hero Css Start
+============================
+*/
+.pazazz-hero-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #D8EEFF;
+}
+.pz-hero-content {
+	max-width: 660px;
+}
+.pz-hero-content span {
+  color: #15568A;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  display: block;
+  margin-bottom: 24px;
+}
+.pz-hero-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+.pz-hero-content p {
+  color: #556987;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width:991px) {
+  .pazazz-hero-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .pz-hero-product {
+    margin-bottom: 25px;
+  }
+  .pz-hero-content span {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .pz-hero-content h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .site-btn {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pazazz-hero-section {
+    text-align: center;
+  }
+  .pazazz-hero-section {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+}
+/*
+============================
+Hero Css End
+============================
+*/
+
+/*
+============================
+About Css Start
+============================
+*/
+.pz-about-section {
+  position: relative;
+}
+.section-title h2 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.section-title h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+.pz-about-list li {
+  color: #556987;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 40px;
+}
+.pz-about-list li::before {
+	content: "\f00c";
+	position: absolute;
+	left: 0;
+	top: 5px;
+	font-family: 'Font Awesome 6 pro';
+	font-size: 18px;
+	width: 24px;
+	height: 24px;
+	color: var(--white-color);
+	background-color: var(--theme-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+.pz-about-list li:not(:last-of-type) {
+	margin-bottom: 10px;
+}
+.pz-about-btn {
+  margin-top: 24px;
+}
+.pz-about-btn a {
+	padding: 14px 28px;
+	border: 1px solid #1D70B7;
+	color: var(--theme-color);
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 6px;
+	text-decoration: none;
+	display: inline-block;
+	transition: 0.3s all ease;
+	text-align: center;
+}
+.pz-about-btn a:hover {
+  color: var(--white-color);
+  background-color: var(--theme-color);
+}
+.pz-video {
+	height: 231px;
+	border-radius: 8px;
+	background-size: cover;
+	background-position: center;
+	max-width: 397px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 10px 30px -10px rgba(42, 51, 66, 0.3);
+}
+.pz-video i {
+  width: 64px;
+  height: 64px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 30px;
+  border-radius: 50%;
+}
+.pz-about-product img {
+	position: absolute;
+	bottom: 0;
+}
+@media only screen and (max-width:767px) {
+  .pz-about-product img {
+    max-width: 329px;
+  }
+}
+.about-two-column {
+  background-color: #15568A;
+}
+.about-two-column .pz-about-content {
+	max-width: 538px;
+}
+.about-two-column .section-title h3 {
+  color: #fff;
+}
+.about-two-column .pz-about-list li {
+  color: #D5DAE1;
+}
+.pz-about-list.list-xmark li::before {
+	content: "\f00d";
+  background-color: var(--primary-color);
+}
+.pz-about-list.check-green li::before {
+	content: "\f00c";
+  background-color: #2AD168;
+}
+.pz-about-product {
+	padding-bottom: 200px;
+}
+.pz-top-img {
+	text-align: right;
+	margin-bottom: 150px;
+}
+.pz-about-list.list-xmark {
+	margin-bottom: 100px;
+	max-width: 538px;
+}
+@media only screen and (max-width:991px) {
+  .about-two-column .pz-about-content {
+    max-width: 100%;
+  }
+  .pz-top-img {
+    margin-bottom: 50px;
+  }
+  .pz-about-list.list-xmark {
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  .section-title h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .pz-about-list li {
+    font-size: 18px;
+  }
+  .pz-about-list.check-green {
+    padding-bottom: 550px;
+  }
+  .pz-about-btn {
+    margin-bottom: 50px;
+  }
+  .pz-video {
+   
+    max-width: 100%;
+  }
+  .pz-bottom-img {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width:767px) {
+	.section-title h3 {
+    margin-bottom: 32px;
+  }
+  .pz-about-btn a:first-child {
+    display: none;
+  }
+  .pz-about-btn a {
+    width: 100%;
+  }
+  .pz-top-img img {
+    width: 100px;
+  }
+  .pz-bottom-img img {
+    max-width: 300px;
+  }
+  .section-title h3 {
+    margin-bottom: 20px;
+  }
+  .pz-about-list.check-green {
+    padding-bottom: 400px;
+  }
+  .pz-about-content.pz-about-right {
+    margin-top: -20px;
+  }
+  .pz-video {
+    margin-bottom: -20px;
+  }
+}
+/*
+============================
+About Css End
+============================
+*/
+
+/*
+============================
+Section Title Css Start
+============================
+*/
+.pz-section-title {
+	background-color: var(--white-color);
+}
+.pz-section-title .section-title img {
+  width: 100px;
+  margin-bottom: 16px;
+}
+.pz-section-title .section-title p {
+  max-width: 944px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.pz-section-title .section-title a {
+  margin-top: 16px;
+}
+/*
+============================
+Section Title Css End
+============================
+*/
+
+/*
+============================
+Pz Buildup Css Start
+============================
+*/
+.pz-buildup-section {
+	background-color: #F7F8F9;
+}
+.pz-buildup-content {
+	max-width: 944px;
+}
+.pz-buildup-content h4 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 38px;
+	margin-bottom: 20px;
+}
+.pz-buildup-content h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+.pz-buildup-content p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+/*
+============================
+Pz Buildup Css End
+============================
+*/
+
+
+/*
+============================
+cleaning Espresso CSS
+============================
+*/
+.cleaning-espresso-section {
+  height: 664px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.cleaning-content-box {
+  background-color: #D8EEFF;
+  box-shadow: 0px 8px 8px -4px rgba(42, 51, 66, 0.17);
+  box-shadow: 0px 20px 24px -4px rgba(42, 51, 66, 0.23);
+  border-radius: 16px;
+  padding: 64px;
+  max-width: 474px;
+  float: right;
+}
+.cleaning-content-box p {
+  color: var(--black);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+} 
+.cleaning-content-box p span{
+  color: var(--primary-color);
+} 
+.cleaning-content-box a {
+  margin-top: 25px;
+}
+@media only screen and (max-width:991px) {
+  .cleaning-content-box {
+    float: none;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width:767px) {
+  .cleaning-content-box {
+    padding: 35px;
+  }
+}
+/*
+============================
+cleaning Espresso CSS End
+============================
+*/
+
+/*
+============================
+Pz Vinegar CSS Start
+============================
+*/
+.pz-vinegar-section {
+	background-color: var(--white-color);
+}
+.pz-vinegar-contents {
+  max-width: 538px;
+}
+.pz-vinegar-image {
+  text-decoration: none;
+  display: block;
+}
+.pz-vinegar-image p {
+  color: #1D70B7;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.pz-vinegar-image img {
+  border-radius: 16px;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.pz-vinegar-contents .section-title h3 {
+	max-width: 400px;
+}
+@media only screen and (max-width:767px) {
+  .pz-vinegar-image {
+    margin-top: 25px;
+  }
+  .pz-vinegar-image img {
+    height: 220px;
+  }
+}
+ .vinegar_content_list.pz-about-list li::before {
+	font-size: 22px;
+	width: 56px;
+	height: 56px;
+	border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.vinegar_content_list.pz-about-list li {
+	color: var(--black);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+	padding-left: 80px;
+	margin-bottom: 40px;
+} 
+.vinegar_content_list {
+	margin-top: 35px;
+}
+.pz-brand img {
+	width: 150px;
+}
+@media only screen and (max-width:991px) {
+  .vinegar_content_list.pz-about-list li {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .vinegar_content_list.pz-about-list li {
+    margin-bottom: 35px;
+  }
+}
+.pz-vinegar-two-column {
+	background-color: var(--white-color);
+}
+/*
+============================
+Pz Vinegar CSS End
+============================
+*/
+
+/*
+============================
+How Pazazz CSS Start
+============================
+*/
+.how-pazazz-works-section {
+	background-color: var(--white-color);
+}
+.pz-work-left img {
+  border-radius: 16px;
+  height: 522px;
+  object-fit: cover;
+}
+.how-pz-works-right a {
+  margin-top: 32px;
+}
+@media only screen and (max-width:991px) {
+  .pz-work-left img {
+    height: 522px;
+    width: 100%;
+  }
+  .how-pz-works-right {
+    margin-top: 32px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .pz-work-left img {
+    height: 358px;
+  }
+}
+/*
+============================
+How Pazazz CSS End
+============================
+*/
+
+
+
+/*
+============================
+Footer Css Start
+============================
+*/
+
+
+
+/*
+============================
+Footer Css End
+============================
+*/
+
